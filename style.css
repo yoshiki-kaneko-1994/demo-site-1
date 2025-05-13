@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* ▼ ここから全体 ▼ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.4rem 0;
+  font-size: 1.4rem;
+  border-radius: 8px;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+/* ▲ ここまで全体 ▲ */
+/* ▼ ここからheader ▼ */
+header {
+  padding: 1rem 0;
+  height: 100vh;
+  background: url(bukubuku8565_TP_V.png) no-repeat;
+  align-content: center;
+  opacity: 0;
+  transition: 1s;
+}
+
+header h1 {
+  text-align: center;
+  transition: 1s;
+  opacity: 0;
+}
+
+header h1 img {
+  width: 200px;
+}
+
+/* ▲ ここまでheader ▲ */
+/* ▼ ここからbanner ▼ */
+.banner {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 10rem;
+  height: 10rem;
+  opacity: 0;
+  transition: 1s 1s;
+  transform: translateY(100px);
+  box-shadow: 4px 4px 8px;
+  z-index: 1000;
+}
+
+.banner a {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  font-size: 2rem;
+  transform: rotate(45deg);
+}
+
+.banner img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* ▲ ここまでbanner ▲ */
+/* ▼ ここからfooter ▼ */
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  background: url(bukubuku8565_TP_V.png) no-repeat;
+}
+
+  footer h2 {
+    margin-top: 2rem;
+    color: red;
+    font-weight: bold;
+  }
+
+@media (max-width: 799px) {
+  footer h2 {
+    font-size: 1.4rem;
+    color: red;
+  }
+
+}
+
+footer .footer-sns {
+  margin-top: 2rem;
+}
+
+footer .footer-list {
+  margin-top: 4rem;
+}
+
+footer .footer-list li {
+  margin-top: 1rem;
+}
+
+footer .footer-sns:hover,
+footer .footer-list li:hover {
+  opacity: 0.4;
+  transition-duration: 0.3s;
+}
+
+footer small {
+  margin-top: 4rem;
+  display: block;
+}
+
+/* ▲ ここまでfooter ▲ */
